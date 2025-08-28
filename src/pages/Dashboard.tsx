@@ -9,11 +9,11 @@ export function Dashboard() {
   };
 
   return (
-    <div className="min-h-full w-full items-start justify-start text-start">
+    <div className="min-h-full w-full items-start justify-start text-start scroll-smooth">
       <div className="sticky top-0 bg-white shadow-lg">
         <Navbar />
       </div>
-      <div className="px-2 mb-4 relative">
+      <div className="px-2 mb-4">
         {isLoading && (
           <div className="absolute inset-0 flex items-center justify-center bg-gray-100 bg-opacity-80 z-10">
             <div className="flex flex-col items-center">
@@ -23,8 +23,9 @@ export function Dashboard() {
           </div>
         )}
         <iframe
-          width="1525"
-          height="645"
+          // width="100%"
+          // height="720"
+          className="h-screen w-full border-0"
           src="https://us-east-1.quicksight.aws.amazon.com/sn/embed/share/accounts/161338712555/dashboards/0a48dddc-dd43-4ec1-8291-1dd1af1bbdfa?directory_alias=intinium"
           onLoad={handleIframeLoad}
           style={{ visibility: isLoading ? "hidden" : "visible" }}
