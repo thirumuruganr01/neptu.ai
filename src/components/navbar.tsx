@@ -31,8 +31,11 @@ export function Navbar() {
                 asChild
                 className={navigationMenuTriggerStyle()}
               >
-                <Link to="/" className="bg-black hover:bg-black focus:bg-black">
-                  <Button className="bg-blue-700 focus:bg-blue-500">
+                <Link
+                  to="/"
+                  className="bg-transparent hover:bg-transparent focus:bg-transparent"
+                >
+                  <Button className="bg-gradient-to-t from-[#864A29]  to-[#EDC2AA] hover:bg-[#864A29] focus:bg-[#864A29]">
                     <LogOut />
                     Logout
                   </Button>

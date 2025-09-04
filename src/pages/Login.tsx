@@ -14,6 +14,7 @@ import { Input } from "@/components/ui/input";
 import BgImage from "../assets/ashley-black-logo.png";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { Checkbox } from "@/components/ui/checkbox";
 
 const formSchema = z.object({
   userId: z.string().min(8, {
@@ -54,7 +55,7 @@ export function Login() {
   }
 
   return (
-    <div className="flex gap-24 min-h-screen w-full items-center justify-center bg-black">
+    <div className="flex gap-24 min-h-screen w-full items-center justify-center bg-[url('/src/assets/login-bg.jpg')] bg-cover bg-center">
       <div className="p-8">
         <img
           src={BgImage}
@@ -62,10 +63,13 @@ export function Login() {
           className="h-full w-[500px]"
         />
       </div>
-      <div className="z-10 w-screen max-w-md rounded-lg p-8 items-center text-start">
-        <h2 className="mb-8 text-5xl font-bold text-white">LOGIN</h2>
+      <div className="z-10 w-screen max-w-md rounded-lg p-8 items-center text-center bg-[#999999]/30 backdrop-blur-xs border-[0.25px] border-[#999999] shadow-lg">
+        <h2 className="mb-6 text-5xl font-bold text-white">Login</h2>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="space-y-6 mt-4 p-4"
+          >
             <FormField
               control={form.control}
               name="userId"
@@ -75,9 +79,9 @@ export function Login() {
                   <FormControl>
                     <Input
                       type="text"
-                      placeholder="Ex: 12345678"
+                      placeholder="Enter your User ID"
                       {...field}
-                      className="rounded-full h-14 px-4"
+                      className="rounded-sm h-10 px-4"
                     />
                   </FormControl>
                   <FormMessage />
@@ -93,9 +97,9 @@ export function Login() {
                   <FormControl>
                     <Input
                       type="password"
-                      placeholder="********"
+                      placeholder="Enter your password"
                       {...field}
-                      className="rounded-full h-14 px-4"
+                      className="rounded-sm h-10 px-4"
                     />
                   </FormControl>
                   <FormMessage />
@@ -107,10 +111,14 @@ export function Login() {
                 {loginError}
               </div>
             )}
+            <div className="flex items-center gap-2 text-white">
+              <Checkbox />
+              <span>Remember me</span>
+            </div>
             <div className="pt-4 text-end">
               <Button
                 type="submit"
-                className="w-[200px] bg-blue-700 hover:bg-blue-500 rounded-full h-14"
+                className="w-full bg-gradient-to-t from-[#864A29]  to-[#EDC2AA] hover:bg-blue-500 rounded-sm h-10 text-lg"
               >
                 Login
               </Button>
