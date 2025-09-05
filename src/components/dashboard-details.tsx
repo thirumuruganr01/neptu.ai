@@ -29,687 +29,687 @@ import {
 
 export function DashboardDetails() {
   return (
-      <div className="px-4 py-2">
-        <Tabs defaultValue="recommendations" className="w-full mt-2">
-          <div className="sticky top-[60px] bg-white">
-            <TabsList>
-              <TabsTrigger value="recommendations" className="text-black">
-                RECOMMENDATIONS
-              </TabsTrigger>
-              <TabsTrigger value="triggeredMessaging" className="text-black">
-                TRIGGERED MESSAGING
-              </TabsTrigger>
-              <TabsTrigger value="personalization" className="text-black">
-                PERSONALIZATION
-              </TabsTrigger>
-            </TabsList>
-          </div>
+    <div className="px-4 py-2">
+      <Tabs defaultValue="recommendations" className="w-full mt-2">
+        <div className="sticky top-[60px] bg-white">
+          <TabsList>
+            <TabsTrigger value="recommendations" className="text-black">
+              RECOMMENDATIONS
+            </TabsTrigger>
+            <TabsTrigger value="triggeredMessaging" className="text-black">
+              TRIGGERED MESSAGING
+            </TabsTrigger>
+            <TabsTrigger value="personalization" className="text-black">
+              PERSONALIZATION
+            </TabsTrigger>
+          </TabsList>
+        </div>
 
-          <TabsContent value="recommendations">
-            <div className="mb-3 space-y-2 border-b pb-2 p-2 pt-0">
-              <p className="mb-2">Select Date</p>
-              <div className="flex gap-3">
-                <DatePickerDemo />
-                <DatePickerDemo />
-              </div>
+        <TabsContent value="recommendations">
+          <div className="mb-3 space-y-2 border-b pb-2 p-2 pt-0">
+            <p className="mb-2">Select Date</p>
+            <div className="flex gap-3">
+              <DatePickerDemo />
+              <DatePickerDemo />
             </div>
-            <div className="bg-neutral-100 rounded-lg p-3">
-              <div className="flex gap-2 mb-3">
-                <div className="w-3/5">
-                  <div className="mb-2">
-                    <p className="text-sky-600 font-bold flex border-b text-sm border-sky-600 pb-1">
-                      <Signature className="me-1" />
-                      <span>UNIQUES</span>
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-3 gap-2">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-sky-600 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_converted</CardTitle>
-                        <CardDescription>
-                          unique visitors who have bought a product clicked as
-                          recommendation
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-sky-600 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-sky-600 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </div>
+          </div>
+          <div className="bg-neutral-100 rounded-lg p-3">
+            <div className="flex gap-2 mb-3">
+              <div className="w-3/5">
+                <div className="mb-2">
+                  <p className="text-sky-600 font-bold flex border-b text-sm border-sky-600 pb-1">
+                    <Signature className="me-1" />
+                    <span>UNIQUES</span>
+                  </p>
                 </div>
-                <div className="w-1/5">
-                  <div className="mb-2">
-                    <p className="text-green-600 flex font-bold border-b border-green-600 pb-1">
-                      <HandCoins className="me-1" />
-                      <span>REVENUE</span>
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-1">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Value</CardTitle>
-                        <CardDescription>
-                          the total amount in the site currency of revenues
-                          generated by clicked products
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-green-600 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
-                <div className="w-1/5">
-                  <div className="mb-2">
-                    <p className="text-purple-600 font-bold flex border-b text-sm border-purple-600 pb-1">
-                      <MousePointerClick className="me-1" />
-                      <span>CLICKS</span>
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-1">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Clicks</CardTitle>
-                        <CardDescription>
-                          the total amount in the site currency of revenues
-                          generated by clicked products{" "}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-purple-600 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </div>
+                <div className="grid grid-cols-3 gap-2">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sky-600 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_converted</CardTitle>
+                      <CardDescription>
+                        unique visitors who have bought a product clicked as
+                        recommendation
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sky-600 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sky-600 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
-              <div className="flex gap-2 mb-3">
-                <div className="w-5/5">
-                  <div className="mb-2">
-                    <p className="text-yellow-500 font-bold flex border-b text-sm border-yellow-500 pb-1">
-                      <Eye className="me-1" />
-                      <span>VIEWS</span>
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-5 gap-2">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_converted</CardTitle>
-                        <CardDescription>
-                          unique visitors who have bought a product clicked as
-                          recommendation
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_converted</CardTitle>
-                        <CardDescription>
-                          unique visitors who have bought a product clicked as
-                          recommendation
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </div>
+              <div className="w-1/5">
+                <div className="mb-2">
+                  <p className="text-green-600 flex font-bold border-b border-green-600 pb-1">
+                    <HandCoins className="me-1" />
+                    <span>REVENUE</span>
+                  </p>
+                </div>
+                <div className="grid grid-cols-1">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Value</CardTitle>
+                      <CardDescription>
+                        the total amount in the site currency of revenues
+                        generated by clicked products
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-green-600 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+              <div className="w-1/5">
+                <div className="mb-2">
+                  <p className="text-purple-600 font-bold flex border-b text-sm border-purple-600 pb-1">
+                    <MousePointerClick className="me-1" />
+                    <span>CLICKS</span>
+                  </p>
+                </div>
+                <div className="grid grid-cols-1">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Clicks</CardTitle>
+                      <CardDescription>
+                        the total amount in the site currency of revenues
+                        generated by clicked products{" "}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-purple-600 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
             </div>
-          </TabsContent>
-          <TabsContent value="triggeredMessaging">
-            <div className="mb-3 space-y-2 border-b pb-2 p-2 pt-0">
-              <div className="flex gap-3">
-                <div>
-                  <p className="mb-2">Select Date</p>
-                  <div className="flex gap-3">
-                    {" "}
-                    <DatePickerDemo />
-                    <DatePickerDemo />
-                  </div>
+            <div className="flex gap-2 mb-3">
+              <div className="w-5/5">
+                <div className="mb-2">
+                  <p className="text-yellow-500 font-bold flex border-b text-sm border-yellow-500 pb-1">
+                    <Eye className="me-1" />
+                    <span>VIEWS</span>
+                  </p>
                 </div>
-                <div>
-                  <p className="mb-2">Email Type</p>
-                  <Select>
-                    <SelectTrigger className="w-[180px]">
-                      <SelectValue placeholder="All" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="apple">Sent</SelectItem>
-                      <SelectItem value="banana">Inbox</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
-            </div>
-            <div className="bg-neutral-100 rounded-lg p-3">
-              <div className="flex gap-2 mb-3">
-                <div className="w-2/6">
-                  <div className="mb-2">
-                    <p className="text-sky-600 font-bold flex border-b text-sm border-sky-600 pb-1">
-                      <SendHorizontal className="me-1" />
-                      <span>SENT</span>
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-2 gap-2">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-sky-600 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_converted</CardTitle>
-                        <CardDescription>
-                          unique visitors who have bought a product clicked as
-                          recommendation
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-sky-600 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
-                <div className="w-1/6">
-                  <div className="mb-2">
-                    <p className="text-green-600 flex font-bold border-b border-green-600 pb-1">
-                      <HandCoins className="me-1" />
-                      <span>REVENUE</span>
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-1">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Revenue</CardTitle>
-                        <CardDescription>
-                          the total amount in the site currency of revenues
-                          generated by clicked products
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-green-600 font-bold text-center text-3xl">
-                          3,35,265
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
-                <div className="w-3/6">
-                  <div className="mb-2">
-                    <p className="text-yellow-500 font-bold flex border-b text-sm border-yellow-500 pb-1">
-                      <Spotlight className="me-1" />
-                      <span>PERFORMANCE</span>
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-3 gap-2">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Performance</CardTitle>
-                        <CardDescription>
-                          the total amount in the site currency of revenues
-                          generated by clicked products
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          3,35,265
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Performance</CardTitle>
-                        <CardDescription>
-                          the total amount in the site currency of revenues
-                          generated by clicked products
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          3,35,265
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Performance</CardTitle>
-                        <CardDescription>
-                          the total amount in the site currency of revenues
-                          generated by clicked products
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          3,35,265
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
-              </div>
-              <div className="mb-2">
-                <p className="text-purple-600 font-bold flex border-b text-sm border-purple-600 pb-1">
-                  <Mail className="me-1" />
-                  <span>EMAIL TYPE</span>
-                </p>
-              </div>
-              <div className="flex gap-2 mb-3">
-                <div className="w-1/2">
-                  <EmailTypeRecords />
-                </div>
-                <div className="w-1/2">
-                  <RuleNumberRecords />
+                <div className="grid grid-cols-5 gap-2">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_converted</CardTitle>
+                      <CardDescription>
+                        unique visitors who have bought a product clicked as
+                        recommendation
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_converted</CardTitle>
+                      <CardDescription>
+                        unique visitors who have bought a product clicked as
+                        recommendation
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
             </div>
-          </TabsContent>
-          <TabsContent value="personalization">
-            {" "}
-            <div className="bg-neutral-100 rounded-lg p-3">
-              <div className="flex gap-2 mb-3">
-                <div className="w-2/4">
-                  <div className="mb-2">
-                    <p className="text-sky-600 font-bold flex border-b text-sm border-sky-600 pb-1">
-                      <MemoryStick className="me-1" />
-                      <span>SPECS</span>
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-2 gap-2">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Rule Id</CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-sky-600 font-bold text-center text-3xl">
-                          12
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Rule name</CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-sky-600 font-bold text-center text-3xl">
-                          12
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </div>
-                <div className="w-2/4">
-                  <div className="mb-2">
-                    <p className="text-green-600 flex font-bold border-b border-green-600 pb-1">
-                      <HandCoins className="me-1" />
-                      <span>REVENUE</span>
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-1">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Revenue</CardTitle>
-                        <CardDescription>
-                          the total amount in the site currency of revenues
-                          generated by clicked products
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-green-600 font-bold text-center text-3xl">
-                          3,35,265
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </div>
+          </div>
+        </TabsContent>
+        <TabsContent value="triggeredMessaging">
+          <div className="mb-3 space-y-2 border-b pb-2 p-2 pt-0">
+            <div className="flex gap-3">
+              <div>
+                <p className="mb-2">Select Date</p>
+                <div className="flex gap-3">
+                  {" "}
+                  <DatePickerDemo />
+                  <DatePickerDemo />
                 </div>
               </div>
-              <div className="flex gap-2 mb-3">
-                <div className="w-4/4">
-                  <div className="mb-2">
-                    <p className="text-yellow-500 font-bold flex border-b text-sm border-yellow-500 pb-1">
-                      <Spotlight className="me-1" />
-                      <span>PERFORMANCE</span>
-                    </p>
-                  </div>
-                  <div className="grid grid-cols-4 gap-2">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_converted</CardTitle>
-                        <CardDescription>
-                          unique visitors who have bought a product clicked as
-                          recommendation
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_converted</CardTitle>
-                        <CardDescription>
-                          unique visitors who have bought a product clicked as
-                          recommendation
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle>Uniques_exposed</CardTitle>
-                        <CardDescription>
-                          number of unique visitors who have been served with
-                          recommendations
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <p className="text-yellow-500 font-bold text-center text-3xl">
-                          2,06,500
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </div>
+              <div>
+                <p className="mb-2">Email Type</p>
+                <Select>
+                  <SelectTrigger className="w-[180px]">
+                    <SelectValue placeholder="All" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="apple">Sent</SelectItem>
+                    <SelectItem value="banana">Inbox</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+          </div>
+          <div className="bg-neutral-100 rounded-lg p-3">
+            <div className="flex gap-2 mb-3">
+              <div className="w-2/6">
+                <div className="mb-2">
+                  <p className="text-sky-600 font-bold flex border-b text-sm border-sky-600 pb-1">
+                    <SendHorizontal className="me-1" />
+                    <span>SENT</span>
+                  </p>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sky-600 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_converted</CardTitle>
+                      <CardDescription>
+                        unique visitors who have bought a product clicked as
+                        recommendation
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sky-600 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+              <div className="w-1/6">
+                <div className="mb-2">
+                  <p className="text-green-600 flex font-bold border-b border-green-600 pb-1">
+                    <HandCoins className="me-1" />
+                    <span>REVENUE</span>
+                  </p>
+                </div>
+                <div className="grid grid-cols-1">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Revenue</CardTitle>
+                      <CardDescription>
+                        the total amount in the site currency of revenues
+                        generated by clicked products
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-green-600 font-bold text-center text-3xl">
+                        3,35,265
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+              <div className="w-3/6">
+                <div className="mb-2">
+                  <p className="text-yellow-500 font-bold flex border-b text-sm border-yellow-500 pb-1">
+                    <Spotlight className="me-1" />
+                    <span>PERFORMANCE</span>
+                  </p>
+                </div>
+                <div className="grid grid-cols-3 gap-2">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Performance</CardTitle>
+                      <CardDescription>
+                        the total amount in the site currency of revenues
+                        generated by clicked products
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        3,35,265
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Performance</CardTitle>
+                      <CardDescription>
+                        the total amount in the site currency of revenues
+                        generated by clicked products
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        3,35,265
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Performance</CardTitle>
+                      <CardDescription>
+                        the total amount in the site currency of revenues
+                        generated by clicked products
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        3,35,265
+                      </p>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
             </div>
-          </TabsContent>
-        </Tabs>
-      </div>
+            <div className="mb-2">
+              <p className="text-purple-600 font-bold flex border-b text-sm border-purple-600 pb-1">
+                <Mail className="me-1" />
+                <span>EMAIL TYPE</span>
+              </p>
+            </div>
+            <div className="flex gap-2 mb-3">
+              <div className="w-1/2">
+                <EmailTypeRecords />
+              </div>
+              <div className="w-1/2">
+                <RuleNumberRecords />
+              </div>
+            </div>
+          </div>
+        </TabsContent>
+        <TabsContent value="personalization">
+          {" "}
+          <div className="bg-neutral-100 rounded-lg p-3">
+            <div className="flex gap-2 mb-3">
+              <div className="w-2/4">
+                <div className="mb-2">
+                  <p className="text-sky-600 font-bold flex border-b text-sm border-sky-600 pb-1">
+                    <MemoryStick className="me-1" />
+                    <span>SPECS</span>
+                  </p>
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Rule Id</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sky-600 font-bold text-center text-3xl">
+                        12
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Rule name</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sky-600 font-bold text-center text-3xl">
+                        12
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+              <div className="w-2/4">
+                <div className="mb-2">
+                  <p className="text-green-600 flex font-bold border-b border-green-600 pb-1">
+                    <HandCoins className="me-1" />
+                    <span>REVENUE</span>
+                  </p>
+                </div>
+                <div className="grid grid-cols-1">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Revenue</CardTitle>
+                      <CardDescription>
+                        the total amount in the site currency of revenues
+                        generated by clicked products
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-green-600 font-bold text-center text-3xl">
+                        3,35,265
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-2 mb-3">
+              <div className="w-4/4">
+                <div className="mb-2">
+                  <p className="text-yellow-500 font-bold flex border-b text-sm border-yellow-500 pb-1">
+                    <Spotlight className="me-1" />
+                    <span>PERFORMANCE</span>
+                  </p>
+                </div>
+                <div className="grid grid-cols-4 gap-2">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_converted</CardTitle>
+                      <CardDescription>
+                        unique visitors who have bought a product clicked as
+                        recommendation
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_converted</CardTitle>
+                      <CardDescription>
+                        unique visitors who have bought a product clicked as
+                        recommendation
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Uniques_exposed</CardTitle>
+                      <CardDescription>
+                        number of unique visitors who have been served with
+                        recommendations
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-yellow-500 font-bold text-center text-3xl">
+                        2,06,500
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </div>
+          </div>
+        </TabsContent>
+      </Tabs>
+    </div>
   );
 }
