@@ -15,6 +15,7 @@ import BgImage from "../assets/ashley-black-logo.png";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
+import LoginBg from "../assets/Login-Bg.png";
 
 const formSchema = z.object({
   userId: z.string().min(8, {
@@ -55,7 +56,11 @@ export function Login() {
   }
 
   return (
-    <div className="flex gap-24 min-h-screen w-full items-center justify-center bg-[url('/src/assets/login-bg.jpg')] bg-cover bg-center">
+    <div
+      className="flex gap-24 min-h-screen w-full items-center justify-center bg-cover bg-center"
+      style={{ backgroundImage: `url(${LoginBg})` }}
+    >
+      {" "}
       <div className="p-8">
         <img
           src={BgImage}
